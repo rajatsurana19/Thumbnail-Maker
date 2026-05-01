@@ -22,8 +22,8 @@ export async function createjob({prompt,numThumbnails,headshotUrl}) {
         },
         body:JSON.stringify({
             prompt,
-            num_thumbnails = numThumbnails,
-            headshot_url = headshotUrl,
+            num_thumbnails: numThumbnails,
+            headshot_url: headshotUrl,
         }),
     });
     if(!res.ok){
